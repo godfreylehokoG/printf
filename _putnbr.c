@@ -19,6 +19,8 @@ void _putnbr(int num)
 		_putchar('-');
 	}
 	if (n > 9)
-		_putnbr(n / 10);
+	{
+		_putnbr(n / 10)
+	}
 	_putchar((n % 10) + '0');
 }
