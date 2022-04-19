@@ -2,8 +2,8 @@
 
 /**
  * lenstr - print and measure a str
- * s: str to printed and measured
- * Rturn: str len.
+ * @s: str to be printed and measured
+ * Return: str len.
  */
 
 int lenstr(char *s)

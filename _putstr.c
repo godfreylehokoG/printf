@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * putstr - writes a str
- * str: str to write
+ * _putstr - writes a str
+ * @str: str to write
  * Return: void function.
  */
 
