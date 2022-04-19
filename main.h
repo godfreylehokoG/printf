@@ -21,5 +21,6 @@ int _atoi(char *str);
 char *_itoa(int n);
 int my_print(va_list argv, const char format);
 int _oct(va_list octo);
+int _numlen(int n);
 
 #endif

@@ -13,12 +13,12 @@ int main(void)
 	int len_char = 0;
 
 	len_str = _printf("%s\n", s);
-/*	printf("%s\n", s);*/
+	printf("%s\n", s);
 	len_pos = _printf("%i\n", i);
 	len_neg = _printf("%d\n", n);
-	_printf("%c\n", c);
-	len_char = _printf("%%\n", e);
-	_printf("Below let the moon");
-/*	printf("len_char %d, len_pos %d, len_neg %d, len_str %d\n", len_str, len_pos, len_neg, len_char);*/
+	len_char = _printf("%c\n", c);
+	_printf("%%\n", e);
+	_printf("Below let the moon\n");
+	printf("len_str %d, len_pos %d, len_neg %d, len_char %d\n", len_str, len_pos, len_neg, len_char);
 	return (0);
 }
