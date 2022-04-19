@@ -8,14 +8,12 @@
 
 int lenstr(char *s)
 {
-	int i = 0;
+	int i;
 
-	if (s == NULL)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		_putstr("(null)");
-		return (6);
+		i++;
 	}
-	while (*s)
-		_putchar(s[i++]);
 	return (i);
 }
