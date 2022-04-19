@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * _printf - printf clone
- *
- * @format: format type
- * Return: size of printed string excluding '\0'.
+ * super_print - Sums all given parameters
+ * @format: separetes ints
+ * Return: sum of given ints.
  */
 
-int _printf(const char *format, ...)
+int super_print(const char * const format, ...)
 {
 	va_list argv;
 	int i = 0;
@@ -26,13 +25,13 @@ int _printf(const char *format, ...)
 		{
 			case 'c':
 				_putchar(va_arg(argv, int));
-				len += 1;
+				len += 1; 
 				break;
 			case 'i':
-				_putnbr(va_arg(argv, int));
+				len += lennbr(va_arg(argv, int));
 				break;
 			case 'd':
-				_putnbr(va_arg(argv, int));
+				len += lennbr(va_arg(argv, int));
 				break;
 			case 's':
 				len += lenstr(va_arg(argv, char *));

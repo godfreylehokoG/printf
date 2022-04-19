@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+#include "../main.h"
 
 /**
  * print_all - Sums all given parameters
@@ -6,44 +6,43 @@
  * Return: sum of given ints.
  */
 
-void print_all(const char * const format, ...)
+int print_all(const char * const format, ...)
 {
 	va_list argv;
 	int i = 0;
 	char *str;
+	int len;
 
 	va_start(argv, format);
-	if (format != NULL && format[i] != 0)
+	while (format != NULL && format[i] != 0)
 	{
+		if (format[i + 1] == '%')
+		{
+			_putchar(37);
+			len += 1;
+		}
 		switch (format[i])
 		{
 			case 'c':
 				_putchar(va_arg(argv, int));
+				len += 1; 
 				break;
 			case 'i':
-				_putnbr(va_arg(argv, int));
+				len += lennbr(va_arg(argv, int));
 				break;
 			case 'd':
-				_putnbr(va_arg(argv, int));
+				len += lennbr(va_arg(argv, int));
 				break;
 			case 's':
-				str = va_arg(argv, char *);
-				if (str == NULL)
-				{
-					printf("(nil)");
-					break;
-				}
-				printf("%s", str);
+				len += lenstr(va_arg(argv, char *));
 				break;
 			default:
 				i++;
 				continue;
 		}
-		if (format[i + 1] == 0)
-			break;
-		printf(", ");
 		i++;
 	}
 	printf("\n");
 	va_end(argv);
+	return (len);
 }

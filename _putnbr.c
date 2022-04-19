@@ -20,7 +20,7 @@ void _putnbr(int num)
 	}
 	if (n > 9)
 	{
-		_putnbr(n / 10)
+		_putnbr(n / 10);
 	}
 	_putchar((n % 10) + '0');
 }
