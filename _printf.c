@@ -46,27 +46,4 @@ int _printf(const char *format, ...)
 	printf("\n");
 	va_end(argv);
 	return (len);
-
-	/*
-	va_list argv;
-	int i;
-	int len;
-
-	va_start(argv, format);
-	while (format[i])
-	{
-		if (format[i] == '%')
-		{
-			super_print(argv, format[i + 1]);
-	
-		}
-		else
-		{
-			_putchar(format[i]);
-			len += 1;
-		}
-		i++;
-	}
-	va_end(argv);
-	return (i); */
 }
