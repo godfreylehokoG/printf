@@ -13,16 +13,19 @@ int _printf(const char *format, ...)
 	int i;
 	int len;
 
-	va_start(argv, format)
+	va_start(argv, format);
 	while (format[i])
 	{
 		if (format[i] == '%')
 		{
-			my_print(argv, str[i + 1])
+			len += my_print(argv, format[i + 1]);
 			i++;
 		}
 		else
-			_putstr(str[i]);
+		{
+			_putchar(format[i]);
+			len += 1;
+		}
 		i++;
 	}
 	va_end(argv);

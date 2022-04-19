@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * lenstr -
+ * lenstr - print and measure a str
  * s: str to printed and measured
  * Rturn: str len.
  */
 
-int lentsr(char *s)
+int lenstr(char *s)
 {
 	int i = 0;
 
@@ -16,10 +16,6 @@ int lentsr(char *s)
 		return (6);
 	}
 	while (*s)
-	{
-		_putchar(s++);
-		i++;
-	}
+		_putchar(s[i++]);
 	return (i);
-		
 }

@@ -16,6 +16,7 @@ void _putnbr(int num);
 int lennbr(int num);
 int lenstr(char *s);
 int _atoi(char *str);
-int print_all(const char * const format, ...);
+char *_itoa(int n);
+int my_print(va_list argv, const char format);
 
 #endif
