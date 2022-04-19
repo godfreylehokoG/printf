@@ -12,6 +12,8 @@ int _printf(const char *format, ...);
 int _strlen(char *s);
 int _isdigit(char d);
 void _putstr(char *str);
+int print_all(const char * const format, ...);
+int super_print(const char * const format, ...);
 void _putnbr(int num);
 int lennbr(int num);
 int lenstr(char *s);
