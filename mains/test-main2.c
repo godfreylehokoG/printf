@@ -18,6 +18,7 @@ int main(void)
 	len_neg = _printf("%d\n", n);
 	_printf("%c\n", c);
 	len_char = _printf("%%\n", e);
-	printf("len_char %d, len_pos %d, len_neg %d, len_str %d\n", len_str, len_pos, len_neg, len_char);
+	_printf("Below let the moon");
+/*	printf("len_char %d, len_pos %d, len_neg %d, len_str %d\n", len_str, len_pos, len_neg, len_char);*/
 	return (0);
 }

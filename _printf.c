@@ -12,16 +12,26 @@ int _printf(const char *format, ...)
 	va_list argv;
 	int i = 0;
 	int len;
+	char *str;
+	int num;
 
 	va_start(argv, format);
 	while (format != NULL && format[i] != 0)
 	{
+		if (format[i] != '%')
+		{
+			str = va_arg(argv, char *);
+		}
 		if (format[i + 1] == '%')
 		{
 			_putchar(37);
 			len += 1;
 		}
-		switch (format[i])
+		if (format[i] != '%')
+		{
+			_putstr(va_arg(argv, char *));
+		}
+/*		switch (format[i])
 		{
 			case 'c':
 				_putchar(va_arg(argv, int));
@@ -34,13 +44,13 @@ int _printf(const char *format, ...)
 				_putnbr(va_arg(argv, int));
 				break;
 			case 's':
-				len += lenstr(va_arg(argv, char *));
+				_putstr(va_arg(argv, char *));
 				break;
 			default:
 				i++;
 				continue;
 		}
-		i++;
+*/		i++;
 	}
 	printf("\n");
 	va_end(argv);
