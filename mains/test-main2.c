@@ -19,4 +19,5 @@ int main(void)
 	_printf("%c\n", c);
 	len_char = _printf("%%\n", e);
 	printf("len_char %d, len_pos %d, len_neg %d, len_str %d\n", len_str, len_pos, len_neg, len_char);
+	return (0);
 }
