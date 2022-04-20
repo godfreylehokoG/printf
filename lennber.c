@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * lennber - print and measure number
+ * lennbr - print and measure number
  * @num: number to be printed and measured
  * Return: number length.
  */
