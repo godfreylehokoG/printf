@@ -35,6 +35,10 @@ int	_formats(va_list args, const char format)
 		print_length += _ui(va_arg(args, unsigned int));
 	else if (format == 'b')
 		print_length += _print_int_binary(va_arg(args, unsigned int));
+	else if (format == 'R')
+		print_length += rot_13(va_arg(args, char *));
+	else if (format == 'p')
+		print_length += _printptr(va_arg(args, unsigned long));
 	return (print_length);
 }
 
