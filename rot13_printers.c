@@ -2,7 +2,7 @@
 
 /**
  * rot_13 - prints the replacement 13th letter for a particular letter
- * @rot: list being passed
+ * @s: list being passed
  * Return: count of chars
  */
 int rot_13(char *s)

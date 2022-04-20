@@ -9,7 +9,7 @@
 int _plen(intptr_t num)
 {
 	int	len;
-	
+
 	len = 0;
 	while (num != 0)
 	{
@@ -50,7 +50,7 @@ void _putptr(intptr_t num)
 int _printptr(unsigned long ptr)
 {
 	int	print_length;
-	
+
 	print_length = 0;
 	print_length += write(1, "0x", 2);
 	if (ptr == 0)

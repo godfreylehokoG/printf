@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_int_binary - fuction to print binary
- * @bi: list being passed
+ * _print_int_binary - fuction to print binary
+ * @b: list being passed
  * Return: updated count
  */
 int _print_int_binary(unsigned int b)
