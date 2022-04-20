@@ -20,7 +20,11 @@ int lenstr(char *s);
 int _atoi(char *str);
 char *_itoa(int n);
 int my_print(va_list argv, const char format);
-int _oct(va_list octo);
 int _numlen(int n);
+int _hex_u(unsigned int n);
+int _hex_l(unsigned int n);
+int _oct(unsigned int n);
+int _ui(unsigned int n);
+int print_int_binary(unsigned int new);
 
 #endif
