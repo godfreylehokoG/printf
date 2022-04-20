@@ -33,20 +33,20 @@ int _hex_str(unsigned int n, unsigned int hex, char alpha)
 
 /**
  * _hex_l - print lower case hexa
- * @hexa: argument recieveed
+ * @n: argument recieveed
  * Return: no of char printed
  */
-int _hex_l(va_list hexa)
+int _hex_l(unsigned int n)
 {
-	return (_hex_str(va_arg(hexa, unsigned int), 16, 'a'));
+	return (_hex_str(n, 16, 'a'));
 }
 
 /**
  * _hex_u - printing upper case hexa
- * @hexa: argument recieved
+ * @n: argument recieved
  * Return: number of char printed
  */
-int _hex_u(va_list hexa)
+int _hex_u(unsigned int n)
 {
-	return (_hex_str(va_arg(hex, unsigned int), 16, 'A'));
+	return (_hex_str(n, 16, 'A'));
 }

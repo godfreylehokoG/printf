@@ -1,17 +1,14 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * _oct - function to print octal
- * @octo: list being passed
+ * @n: list being passed
  * Return: updated count
  */
-int _oct(va_list octo)
+int _oct(unsigned int n)
 {
 	int count = 0, i;
 	int *arr;
-	unsigned int n = va_arg(octo, unsigned int);
 	unsigned int tmp = n;
 
 	while (n / 8 != 0)
