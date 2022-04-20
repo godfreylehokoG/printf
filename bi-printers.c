@@ -5,17 +5,16 @@
  * @bi: list being passed
  * Return: updated count
  */
-int print_int_binary(va_list bi)
+int _print_int_binary(unsigned int b)
 {
 	int count = 0;
 	int i;
 	int *arr;
-	unsigned int b = va_arg(bi, unsigned int);
 	unsigned int tmp = b;
 
-	while (n / 2 != 0)
+	while (b / 2 != 0)
 	{
-		n /= 2;
+		b /= 2;
 		count++;
 	}
 	count++;

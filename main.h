@@ -25,6 +25,6 @@ int _hex_u(unsigned int n);
 int _hex_l(unsigned int n);
 int _oct(unsigned int n);
 int _ui(unsigned int n);
-int print_int_binary(unsigned int new);
+int _print_int_binary(unsigned int b);
 
 #endif

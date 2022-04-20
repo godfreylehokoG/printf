@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * _hex_str - converts the number from base 10 to hex
  * @n: number to be converted
@@ -8,6 +9,7 @@
  * @alpha: char 'A' to 'F' or 'a' to 'f'
  * Return: number of chars printed
  */
+
 int _hex_str(unsigned int n, unsigned int hex, char alpha)
 {
 	unsigned int a = n % hex;
@@ -22,7 +24,7 @@ int _hex_str(unsigned int n, unsigned int hex, char alpha)
 	{
 		return (_putchar(c));
 	}
-	if (b < hex)
+	if (n <= hex)
 	{
 		if (b < 10)
 			return (_putchar(b - 10 + alpha) + _putchar (c));
@@ -36,6 +38,7 @@ int _hex_str(unsigned int n, unsigned int hex, char alpha)
  * @n: argument recieveed
  * Return: no of char printed
  */
+
 int _hex_l(unsigned int n)
 {
 	return (_hex_str(n, 16, 'a'));

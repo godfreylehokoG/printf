@@ -10,6 +10,7 @@ int rot_13(va_list rot)
 	int a;
 	int count;
 	char *c;
+	char *s;
 
 	a = count = 0;
 	c = va_arg(rot, char *);
