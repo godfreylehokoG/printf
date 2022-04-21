@@ -28,5 +28,6 @@ int _ui(unsigned int n);
 int _print_int_binary(unsigned int b);
 int rot_13(char *s);
 int _printptr(unsigned long ptr);
+int _strrev(char *s);
 
 #endif
