@@ -15,7 +15,7 @@ int _strrev(char *s)
 		_putstr("(null)");
 		return (6);
 	}
-	while (i >= 0)
+	while (i >= '\0')
 		_putchar(s[i--]);
 	return (_strlen(s));
 }

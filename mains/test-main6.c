@@ -9,7 +9,7 @@ int main(void)
 	len = _strrev(s);
 	_putchar('\n');
 	printf("%d\n", len);
-	printf("[%s]\n", str);
+	printf("%s\n", str);
 
 	return (0);
 }
