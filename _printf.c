@@ -39,6 +39,8 @@ int	_formats(va_list args, const char format)
 		print_length += rot_13(va_arg(args, char *));
 	else if (format == 'p')
 		print_length += _printptr(va_arg(args, unsigned long));
+	else if (format == 'r')
+		print_length += _strrev(va_arg(args, char *));
 	return (print_length);
 }
 
