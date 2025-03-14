@@ -75,4 +75,4 @@ output : The cat landed on 4 paws
 our program does not handle buffer handling, flag characters, field width, precision, or length modifiers.
 
 ### Authors
-Lehlohonolo Lehoko
+Lehlohonolo Lehoko and Ramon Briton
